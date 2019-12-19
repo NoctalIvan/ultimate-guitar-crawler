@@ -1,0 +1,42 @@
+<!doctype html>
+<style type="text/css">
+	.hidden {
+		display: none!important;
+	}
+
+	#mainPopup {
+		padding: 10px;
+		height: 125px;
+		width: 200px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+</style>
+
+
+<div id="mainPopup">
+	<h1>Web Song Book</h1>
+	<div id="content">
+		<div id="loader" class="conditional-content">
+			Loading...
+		</div>
+
+		<div id="importer" class="conditional-content hidden">
+			
+		</div>
+
+		<div id="error403" class="conditional-content hidden">
+			It seems like you are not logged-in to Ultimate Guitar<br/>
+			Please log-in an try again
+		</div>
+
+		<div id="wrong-website" class="conditional-content hidden">
+			Please go to <a href="https://www.ultimate-guitar.com/" target="_blank">Ultimate guitar</a> to export your song book
+		</div>
+	</div>
+</div>
+
+<script src="./axios.min.js"></script>
+<script src="./browse_action.js"></script>
