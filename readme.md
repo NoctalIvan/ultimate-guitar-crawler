@@ -24,7 +24,7 @@ Simply export your Ultimate Guitar playlist with one click of the extension. Sup
 
 ## Why not publish it on the google chrome app store ?
 
-Cuz it's a pain. Not sure anyone gonna use it anyway.
+Cuz it's a pain. Not sure anyone gonna use it anyway. I made it mainly for my own needs and sharing cuz why not
 
 ## Disclaimer
 
