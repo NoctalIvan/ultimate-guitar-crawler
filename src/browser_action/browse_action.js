@@ -21,7 +21,15 @@ const onCsvExport = () => {
     }
 
     let csv = 'artist,song,version,UG link,\n' + tabs.map(t => [t.band_name, t.song_name, t.version, t.song_url].join(',')).join('\n')
-    dlFile(csv, 'webSongBook_export.csv', 'text/csv')
+    dlFile(csv, 'ug-export.csv', 'text/csv')
+}
+
+const onJsonExport = () => {
+    if(!tabs) {
+        return
+    }
+
+    dlFile(JSON.stringify(tabs), 'ug-export.json', 'data/json')
 }
 
 const changeDisplay = (id) => {
@@ -74,8 +82,10 @@ const main = async () => {
         document.getElementById('importer').innerHTML = `
             <div>We found ${tabs.length} tabs on Ultimate Guitar!</div>
             <button style="margin-top: 10px" id="csvExport">Export to CSV</button>  
+            <button style="margin-top: 10px" id="jsonExport">Export to JSON</button>  
         `
         document.getElementById('csvExport').onclick = onCsvExport
+        document.getElementById('jsonExport').onclick = onJsonExport
         changeDisplay('importer')
     } else {
         changeDisplay('wrong-website')

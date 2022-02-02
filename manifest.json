@@ -1,9 +1,9 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
-  "version": "0.0.1",
+  "name": "Ultimate guitar crawler",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Ultimate guitar playlist crawler extension for google chrome",
+  "homepage_url": "https://github.com/NoctalIvan/ultimate-guitar-crawler",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -13,7 +13,7 @@
   "default_locale": "en",
   "browser_action": {
     "default_icon": "icons/icon48.png",
-    "default_title": "Web Song Book",
+    "default_title": "Ultimate guitar crawler",
     "default_popup": "src/browser_action/browser_action.html"
   },
   "permissions": [
